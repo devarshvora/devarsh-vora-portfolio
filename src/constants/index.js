@@ -1,4 +1,4 @@
-import mylogo from "../assets/mylogo.png"; // ✅ added missing logo import
+import mylogo from "../assets/mylogo.png"; 
 
 import {
   uta,
@@ -207,7 +207,7 @@ export const educationList = [
     duration: "August 2023 - May 2025",
     content1: "Major: Computer Science",
     content2: "GPA: 3.91",
-    transcript: "https://drive.google.com/file/d/1km0ujsWqJNKGYg_SFBVv754qtTDnYBCv/view?usp=sharing", // 🔗 Add your actual transcript link here
+    transcript: "https://drive.google.com/file/d/1km0ujsWqJNKGYg_SFBVv754qtTDnYBCv/view?usp=sharing",
   },
   {
     id: "education-2",
@@ -217,7 +217,7 @@ export const educationList = [
     duration: "August 2019 - May 2023",
     content1: "Major: Information and Communication Technology",
     content2: "GPA: 3.50",
-    transcript: "https://drive.google.com/file/d/1JPCnF56Fyn9-66iJt9C1mJcDVzcNYEIU/view?usp=sharing", // 🔗 Add your actual transcript link here
+    transcript: "https://drive.google.com/file/d/1JPCnF56Fyn9-66iJt9C1mJcDVzcNYEIU/view?usp=sharing", 
   },
 ];
 
@@ -819,7 +819,7 @@ export const extraCurricular = [
   {
     id: 3,
     organisation: "Student Government - UTA",
-    title: "Legislative Relations Committee Member"
+    title: "Legislative Relations Committee Member",
     duration: "Aug 2023 - Dec 2023",
     content: [
       {
