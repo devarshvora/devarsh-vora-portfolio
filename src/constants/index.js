@@ -819,7 +819,7 @@ export const extraCurricular = [
   {
     id: 3,
     organisation: "Student Government - UTA",
-    title: "Legislative Relations Committee Member
+    title: "Legislative Relations Committee Member"
     duration: "Aug 2023 - Dec 2023",
     content: [
       {
