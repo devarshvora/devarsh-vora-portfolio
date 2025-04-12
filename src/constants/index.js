@@ -803,7 +803,7 @@ export const extraCurricular = [
     id: 2,
     organisation: "TRIO-Upward Bound",
     title: "Student Advisor",
-    duration: "July 2024 - May 2025",
+    duration: "May 2024 - July 2024",
     content: [
       {
         text: "Guided students in exploring STEM subjects through interactive discussions and hands-on activities, incorporating real-world examples and basic data visualization techniques to enhance understanding.",
@@ -818,9 +818,9 @@ export const extraCurricular = [
   },
   {
     id: 3,
-    organisation: "Genesis, NITK",
-    title: "Competitions Head",
-    duration: "Sep 2021 - Present",
+    organisation: "Student Government - UTA",
+    title: "Legislative Relations Committee Member
+    duration: "Aug 2023 - Dec 2023",
     content: [
       {
         text: "Contributed to policy development and advocacy initiatives as a Legislative Relations Committee Member, focusing on drafting resolutions and supporting student-focused policies.",
