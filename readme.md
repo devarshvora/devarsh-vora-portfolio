@@ -2,7 +2,7 @@
 
 ![Portfolio Screenshot](./header.png)
 
-### Deployed Link: [https://parthmittal.netlify.app/](https://parthmittal.netlify.app/)
+### Deployed Link: [https://devarshvora-portfolio.netlify.app/)
 
 ## Table of Contents 📁
 
