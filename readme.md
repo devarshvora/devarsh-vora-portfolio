@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![Portfolio Screenshot](./Header.png)
+![Portfolio Screenshot](./header.png)
 
 ### Deployed Link: [https://parthmittal.netlify.app/](https://parthmittal.netlify.app/)
 
