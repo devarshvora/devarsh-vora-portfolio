@@ -344,7 +344,7 @@ export const cloudPlatforms = [
 // Add your current/past professional work experience here
 export const experiences = [
   {
-    organisation: "Quintessence Knowledge Services, India",
+    organisation: "Quintessence Knowledge Services, Remote",
     logo: qks,
     link: "https://quintessenceks.com/",
     positions: [
@@ -378,12 +378,12 @@ export const experiences = [
     ],
   },
   {
-    organisation: "Creative Sapiens LLP, India",
+    organisation: "Creative Sapiens LLP, Hybrid",
     logo: cs,
     link: "",
     positions: [
       {
-        title: "Technical Lead",
+        title: "Technical Lead - Data Team",
         duration: "April 2022  - Jan 2023",
         certificate: "https://drive.google.com/file/d/1dEUSctMmNyIw6e0OV1iukC4pu22iEKCI/view?usp=drive_link",
         content: [
@@ -412,7 +412,7 @@ export const experiences = [
     ],
   },
   {
-    organisation: "Infolabz IT Services, India",
+    organisation: "Infolabz IT Services",
     logo: infolabz,
     link: "",
     positions: [
@@ -451,7 +451,7 @@ export const experiences = [
     link: "",
     positions: [
       {
-        title: "Virtual Internship",
+        title: "Technology Consulting Intern",
         duration: "Nov 2020 - July 2020",
         certificate: "https://drive.google.com/file/d/1Wcs95oa3rOzofvhmJbHAyG-syVF8h1Sg/view?usp=drive_link",
         content: [
