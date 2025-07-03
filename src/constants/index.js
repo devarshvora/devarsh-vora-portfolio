@@ -452,7 +452,7 @@ export const experiences = [
     positions: [
       {
         title: "Technology Consulting Intern",
-        duration: "Nov 2020 - July 2020",
+        duration: "Nov 2020 - Dec 2020",
         certificate: "https://drive.google.com/file/d/1Wcs95oa3rOzofvhmJbHAyG-syVF8h1Sg/view?usp=drive_link",
         content: [
           {
