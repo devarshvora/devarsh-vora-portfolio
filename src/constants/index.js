@@ -22,6 +22,7 @@ import {
   ubms,
   edgecenter,
   utasg,
+  salesforce,
 } from "../assets";
 
 import {
@@ -158,7 +159,7 @@ export const icons = {
 };
 
 export const resumeLink =
-  "https://drive.google.com/file/d/1OqKmQpm1EYdz7mKZ7kWl8fkXHO-HCfcx/view?usp=drive_link";
+  "https://drive.google.com/file/d/1lrZPm4B_9xkI0MDDK4aDS3reOXuLivqH/view?usp=sharing";
 
 export const repoLink = "https://github.com/devarshvora/devarsh-vora-portfolio";
 
@@ -249,6 +250,15 @@ export const certifications = [
       "Validated foundational understanding of the Databricks Lakehouse platform and big data concepts.",
     credential:
       "https://credentials.databricks.com/ef8b8751-e93d-4869-b1bc-eab35ef91a33#acc.e3LJh6aP",
+  },
+  {
+    icon: salesforce,
+    title: "Salesforce Analytics: Reports & Dashboards",
+    issuer: "Salesforce",
+    description:
+      "Built dynamic Salesforce reports and dashboards to deliver insights, enhance data visibility, and support customer success operations.",
+    credential:
+      "https://coursera.org/share/5de332ea6ea1e875a0ac26d21c661a45",
   },
 ];
 

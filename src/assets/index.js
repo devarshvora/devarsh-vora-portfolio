@@ -20,6 +20,7 @@ import ethglobal from "./ethglobal.png";
 import aws from "./aws.png";
 import google from "./google.png";
 import databricks from "./databricks.png";
+import salesforce from "./salesforce.png";
 import lightspeed from "./lightspeed.png";
 import dennisivy from "./dennisivy.png";
 import ethforall from "./ethforall.png";
@@ -52,6 +53,7 @@ export {
   google,
   aws,
   databricks,
+  salesforce,
   chargeswap,
   placeicon,
   recruitment,
