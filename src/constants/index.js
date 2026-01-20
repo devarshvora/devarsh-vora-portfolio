@@ -207,8 +207,8 @@ export const educationList = [
     degree: "Master of Science",
     duration: "August 2023 - May 2025",
     content1: "Major: Computer Science",
-    content2: "GPA: 3.91",
-    transcript: "https://drive.google.com/file/d/1km0ujsWqJNKGYg_SFBVv754qtTDnYBCv/view?usp=sharing",
+    content2: "GPA: 3.83",
+    transcript: "https://drive.google.com/file/d/1-zpgO8oB5c6RG2wfaREbtk7HRTz3FVfy/view?usp=sharing",
   },
   {
     id: "education-2",
@@ -217,7 +217,7 @@ export const educationList = [
     degree: "Bachelor of Technology",
     duration: "August 2019 - May 2023",
     content1: "Major: Information and Communication Technology",
-    content2: "GPA: 3.50",
+    content2: "GPA: 3.54",
     transcript: "https://drive.google.com/file/d/1JPCnF56Fyn9-66iJt9C1mJcDVzcNYEIU/view?usp=sharing", 
   },
 ];
@@ -353,133 +353,61 @@ export const cloudPlatforms = [
 
 // Add your current/past professional work experience here
 export const experiences = [
-  {
-    organisation: "Quintessence Knowledge Services, Remote",
-    logo: qks,
-    link: "https://quintessenceks.com/",
-    positions: [
-      {
-        title: "Business Intelligence Intern",
-        duration: "Feb 2023 - June 2023",
-        certificate: "https://drive.google.com/file/d/1RfinVfV5z4p_ctJ1DUMA3FbZ_KyxPNMv/view?usp=drive_link",
-        content: [
-          {
-            text: "Conducted market research on over 1M+ data points using SQL, Python-based ETL pipelines, and Apache Spark to analyze consumer behavior, leading to a 15% increase in engagement metrics.",
-            link: "",
-          },
-          {
-            text: "Developed automated reports and dashboards using Tableau and SQL, enhancing actionable insights for customer segmentation and KPI tracking.",
-            link: "",
-          },
-          {
-            text: "Collaborated with cross-functional teams (Sales, Marketing, Data Analysts) to implement data-driven strategies, boosting operational efficiency by 20%.",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "Creative Sapiens LLP, Hybrid",
+    {
+    organisation: "Matrices – Remote, USA",
     logo: cs,
-    link: "",
     positions: [
       {
-        title: "Technical Lead - Data Team",
-        duration: "April 2022  - Jan 2023",
-        certificate: "https://drive.google.com/file/d/1dEUSctMmNyIw6e0OV1iukC4pu22iEKCI/view?usp=drive_link",
+        title: "Applied AI Analyst",
+        duration: "Sept 2025 - Present",
         content: [
           {
-            text: "Designed and deployed a scalable SaaS platform using Python, Flask, PostgreSQL, Snowflake, and Airflow for real-time data ingestion and quality checks, serving over 5,000 users.",
-            link: "",
-          },
-          {
-            text: "Optimized SQL queries and implemented CI/CD workflows to reduce response time by 30%.",
-            link: "",
-          },
-          {
-            text: "Conducted data analysis to identify hiring trends, improving candidate recommendations and reducing mismatch rates by 25%.",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
+            text: "Contributed to AI-driven simulation and analytics workflows for evaluating autonomous agent performance across multi-step tasks. Built and supported scalable ingestion and streaming pipelines using NiFi, Dataflow, Flink, Kafka, and Spark, and collaborated with research and engineering teams to refine evaluation logic and analytical metrics, improving system stability and insight reliability.",
           },
         ],
       },
     ],
   },
-  {
-    organisation: "Infolabz IT Services",
+    {
+    organisation: "CyberdomeUSA – Indiana, USA",
     logo: infolabz,
-    link: "",
     positions: [
       {
-        title: "Data Science Intern",
-        duration: "Jun 2022 - July 2022",
-        certificate: "https://drive.google.com/file/d/1JYYEyDedLqoZsFliv2AHvpcRJ4BGergH/view?usp=drive_link",
+        title: "Data Scientist",
+        duration: "Aug 2025 - Present",
         content: [
           {
-            text: "Designed ETL pipelines using Python, SQL, and Apache Airflow to improve data ingestion speed by 35%.",
-            link: "",
-          },
-          {
-            text: "Built interactive visualizations with Power BI, Matplotlib, and Seaborn to analyze trends in over 100K records.",
-            link: "",
-          },
-          {
-            text: "Applied statistical modeling techniques for predictive analytics and decision-making improvements.",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
+            text: "Worked with large-scale security and behavioral data to develop risk scoring and recommendation models while supporting investigative and reporting workflows. Built scalable analytical datasets and pipelines using SQL, dbt, and Spark, and partnered with product and security teams to deliver dashboards and self-serve analytics that improved detection accuracy and investigative turnaround time.",
           },
         ],
       },
     ],
   },
   {
-    organisation: "Deloitte",
-    logo: deloitte,
-    link: "",
+    organisation: "University of Texas at Arlington – Texas, USA",
+    logo: qks,
     positions: [
       {
-        title: "Technology Consulting Intern",
-        duration: "Nov 2020 - Dec 2020",
-        certificate: "https://drive.google.com/file/d/1Wcs95oa3rOzofvhmJbHAyG-syVF8h1Sg/view?usp=drive_link",
+        title: "Data & Analytics Assistant",
+        duration: "July 2024 – May 2025",
         content: [
           {
-            text: "Conducted in-depth client discovery and market scans to analyze customer data, identifying trends and actionable insights to address disputes effectively.",
-            link: "",
+            text: "Supported segmentation and analytics initiatives by analyzing behavioral datasets and contributing to machine learning–driven targeting models to improve engagement. Built and maintained data pipelines using Airflow, Spark, and SQL to improve data availability, and supported reproducible analytics through version-controlled workflows and containerized environments.",
           },
+        ],
+      },
+    ],
+  },
+  {
+    organisation: "CrystalVoxx Limited – Gujarat, India",
+    logo: deloitte,
+    positions: [
+      {
+        title: "Data Scientist",
+        duration: "July 2021 – Dec 2022",
+        content: [
           {
-            text: "Designed a data-driven business case and project approach, leveraging analytics to predict and mitigate potential customer dissatisfaction issues.",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
-          },
-          {
-            text: "",
-            link: "",
+            text: "Worked on large-scale healthcare operational and transactional data to develop machine learning and analytical solutions supporting workflow optimization, performance monitoring, and decision-making. Built recommendation and NLP-based models using Spark and transformer pipelines, and applied statistical analysis, experimentation, and funnel analysis to deliver Tableau dashboards that improved efficiency and operational visibility.",
           },
         ],
       },
@@ -794,16 +722,16 @@ export const stats = [
 export const extraCurricular = [
   {
     id: 1,
-    organisation: "EDGE Center - UTA",
-    title: "Graduate Assistant",
-    duration: "July 2024 - May 2025",
+    organisation: "Research Publication (IEEE Xplore)",
+    title: "A Comprehensive Study on Techniques Utilized for Attention Detection",
+    duration: "30 December 2022",
     content: [
       {
-        text: "Collaborating on workshops, podcasts, and events to develop skills in teamwork, event planning, communication, and professional growth, while utilizing project management tools like Trello or Asana for efficient execution.",
+        text: "Explored automated attention detection using behavioral and physiological signals, leveraging eye-tracking sensors and computer vision to analyze focus, distraction, and cognitive engagement.",
         link: "",
       },
       {
-        text: "Enhancing expertise in computer science and data analysis by developing skills in Python, SQL, and data visualization tools like Tableau to analyze and present insights effectively.",
+        text: "Reviewed multiple attention measurement techniques within a ternary data framework, identifying ECG-based analysis as a reliable and scalable approach due to strong signal quality.",
         link: "",
       },
     ],
@@ -817,7 +745,7 @@ export const extraCurricular = [
     content: [
       {
         text: "Guided students in exploring STEM subjects through interactive discussions and hands-on activities, incorporating real-world examples and basic data visualization techniques to enhance understanding.",
-        link: "",
+        link: "https://ieeexplore.ieee.org/abstract/document/9988691",
       },
       {
         text: "Fostered a supportive learning environment by encouraging students to analyze data, identify patterns, and present findings visually, nurturing critical thinking skills.",
@@ -879,7 +807,7 @@ export const aboutMe = {
   name: "Devarsh Vora",
   githubUsername: "devarshvora",
   tagLine:
-    "MS-CS @UTA'25 | Data Enthusiast & Problem Solver | ex-Tech Lead @Creative Sapiens | 3x Internships | IEEE Published Author | AWS & Databricks Certified ",
+    "Applied AI/ML & Data Analytics | Data Science • Cloud Engineering | Python • SQL • Data Processing • AWS • Visualization Tools | IEEE Published Author | AWS & Databricks Certified ",
   intro:
     "Turning chaos into clarity—either taming unruly datasets, uncovering hidden stories, or engineering the next big breakthrough. Data isn’t just numbers; it’s my playground for ideas.",
 };

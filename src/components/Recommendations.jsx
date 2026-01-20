@@ -55,11 +55,11 @@ const Recommendations = () => {
     {
       image: alejandro,
       name: "Alejandro Ruiz",
-      title: "Coordinator III, EDGE Center, UTA",
+      title: "Sr. Manager, Educational Partnerships, Dallas College - North Lake Campus",
       summary:
         "Devarsh applied his technical data analytics skills to drive informed decisions while managing digital projects and workshops with confidence and clarity.",
-      email: "alex.ruiz2@uta.edu",
-      phone: "+1-817-272-3833",
+      email: "aruiz2@dallascollege.edu",
+      phone: "+1 (972) 273-3177",
       linkedin:
         "https://www.linkedin.com/in/devarshvora/details/recommendations/",
     },
