@@ -302,7 +302,7 @@ export const aboutMe = {
   name: "Devarsh Vora",
   githubUsername: "devarshvora",
   tagLine: "I build AI and data systems that earn their place in everyday workflows. Open to conversations where thoughtful analysis and reliable engineering can turn a difficult problem into a useful product.",
-  intro: "Turning chaos into clarity, either taming unruly datasets, uncovering hidden stories, or engineering the next big breakthrough. Data isn’t just numbers; it’s my playground for ideas—from intelligent automation to AI systems built for real-world use.",
+  intro: "Turning chaos into clarity, either taming unruly datasets, uncovering hidden stories, or engineering the next big breakthrough. Data isn’t just numbers; it’s my playground for ideas, from intelligent automation to AI systems built for real-world use.",
 };
 
 // The maximum number of PRs to be displayed in the Open Source Contributions section.
