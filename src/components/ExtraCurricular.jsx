@@ -10,7 +10,7 @@ const Content = ({ text, link }) => {
       <p className="font-poppins font-normal text-[14px] text-dimWhite my-4 leading-[32px]">
         ● {text}{" "}
         {link ? (
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noopener noreferrer" aria-label="View source">
             <BsLink45Deg
               size="1rem"
               className="inline hover:text-teal-200"
@@ -27,7 +27,7 @@ const Content = ({ text, link }) => {
 const ExtraCurricularCard = (props) => {
   return (
     <motion.div
-      className="flex flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 my-5 feedback-card"
+      className="min-w-0 flex flex-col px-5 py-8 rounded-[20px] max-w-[370px] my-5 feedback-card"
       whileInView={{ y: [-30, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
     >
@@ -35,7 +35,7 @@ const ExtraCurricularCard = (props) => {
         <img
           src={props.logo}
           alt={props.organisation}
-          className="w-[52px] h-[52px] rounded-full"
+          className="w-[52px] h-[52px] shrink-0 rounded-full"
         />
         <div className="flex flex-col ml-4">
           <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">

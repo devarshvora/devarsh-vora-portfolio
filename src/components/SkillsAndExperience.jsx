@@ -1,139 +1,93 @@
 import React from "react";
-import {
-  skills,
-  frameworks,
-  tools,
-  ml_ai,
-  dataEngineering,
-  cloudPlatforms,
-  experiences,
-} from "../constants";
+import { skillCategories, experiences } from "../constants";
 import { layout } from "../style";
 import { motion } from "framer-motion";
-import { BsLink45Deg } from "react-icons/bs";
 
-export const SkillIcon = ({ icon, name, custom }) => {
+export const SkillIcon = ({ icon, name, featured }) => {
   return (
-    <div className="flex flex-col items-center min-w-[90px]">
-      <span className={`text-white ${custom ? "text-[36px]" : "text-[30px]"} hover:text-teal-200`}>
-        {icon ? React.createElement(icon) : <span className="text-white">🧠</span>}
+    <div className="flex flex-col items-center min-w-0">
+      <span aria-hidden="true" className={`text-[30px] hover:text-teal-200 ${featured ? "text-teal-200" : "text-white"}`}>
+        {React.createElement(icon)}
       </span>
-      <p className={`font-poppins text-dimWhite ${custom ? "text-[14px]" : "text-[12px]"} mt-2 text-center`}>
+      <p className={`font-poppins text-[12px] leading-5 mt-2 text-center break-words max-w-full ${featured ? "text-white font-semibold" : "text-dimWhite"}`}>
         {name}
       </p>
     </div>
   );
 };
 
-const SkillCard = ({ title, items, custom = false }) => {
+const SkillCard = ({ title, items }) => {
   return (
     <motion.div
       whileInView={{ y: [-20, 0], opacity: [0, 1] }}
       transition={{ duration: 1 }}
-      className="mt-8 mb-10 border-l border-gray-200 dark:border-gray-700 mx-4"
+      className="py-8 first:pt-2 border-b border-gray-800 last:border-b-0"
     >
-      <div className="relative w-3 h-3 bg-gray-200 rounded-full top-5 right-[6.2px] border dark:border-gray-900 dark:bg-gray-700"></div>
-      <div className="flex flex-row items-center mb-6 ml-6">
+      <div className="flex flex-row items-center mb-7">
         <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px]">
           {title}
         </h4>
       </div>
-      <div className={`grid ${custom ? "grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-10" : "grid-cols-3 sm:grid-cols-4 gap-8"} ml-8`}>
+      <div className="grid grid-cols-3 sm:grid-cols-4 gap-x-3 gap-y-7">
         {items.map((item, index) => (
-          <SkillIcon key={item.id ?? index} {...item} custom={custom} />
+          <SkillIcon key={item.id ?? index} {...item} />
         ))}
       </div>
     </motion.div>
   );
 };
 
-const Content = ({ text, link }) => (
-  <div>
-    <p className="font-poppins font-normal text-[15px] md:text-[15px] text-dimWhite mt-4">
-      {text}{" "}
-      {link && (
-        <a href={link} target="_blank" rel="noreferrer">
-          <BsLink45Deg size="1rem" className="inline hover:text-teal-200" />
-        </a>
-      )}
-    </p>
-  </div>
-);
-
-const ExperienceCard = ({ logo, organisation, positions }) => (
+const ExperienceCard = ({ logo, initials, organisation, positions, logoBackground = "bg-dimBlue" }) => (
   <motion.div
     whileInView={{ y: [-20, 0], opacity: [0, 1] }}
     transition={{ duration: 1 }}
-    className="mb-12"
+    className="relative w-full min-w-0 pb-12 md:pb-16 md:flex-1 last:pb-0 md:last:flex-none pl-[76px] sm:pl-[92px] [&:last-child>.experience-rail]:hidden"
   >
-    <div className="flex flex-row items-center mb-6">
-      <img
+    <span aria-hidden="true" className="experience-rail absolute left-[31px] sm:left-[37px] top-16 sm:top-[76px] bottom-0 w-px bg-gray-800" />
+    <div className={`absolute left-0 top-0 w-16 h-16 sm:w-[76px] sm:h-[76px] shrink-0 rounded-full ${logoBackground} flex items-center justify-center overflow-hidden ring-1 ring-gray-700`}>
+      {logo ? <img
         src={logo}
         alt={organisation}
-        className="w-[52px] h-[52px] rounded-full z-[2]"
-      />
-      <h4 className="font-poppins font-semibold text-[20px] text-gradient leading-[32px] ml-2">
+        className="w-[80%] h-[80%] object-contain"
+      /> : <span aria-hidden="true" className="text-teal-200 font-poppins font-semibold">{initials}</span>}
+    </div>
+    <div className="pt-1">
+      <h4 className="font-poppins font-semibold text-[23px] sm:text-[28px] lg:text-[30px] text-gradient leading-[32px] sm:leading-[38px] lg:leading-[42px]">
         {organisation}
       </h4>
-    </div>
-    <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-6">
+    <ol className="mt-4">
       {positions.map((position, index) => (
         <li
           key={index}
-          className={`${index === positions.length - 1 ? "mb-0" : "mb-4"} ml-4`}
+          className={index === positions.length - 1 ? "" : "mb-5"}
         >
-          <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
-          <h3 className="text-lg font-semibold text-white flex items-center">
+          <h3 className="font-poppins text-[19px] sm:text-[21px] leading-8 font-semibold text-white">
             {position.title}
-            {position.certificate && (
-              <a href={position.certificate} target="_blank" rel="noreferrer">
-                <BsLink45Deg
-                  size="1.4rem"
-                  className="ml-2 text-teal-400 hover:text-teal-300"
-                  title="View Certificate"
-                />
-              </a>
-            )}
           </h3>
-          <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+          <time className="block mt-2 font-poppins text-[14px] sm:text-[15px] leading-6 font-normal text-gray-400">
             {position.duration}
           </time>
-          {position.content.map((info, idx) => (
-            <Content key={idx} {...info} />
-          ))}
         </li>
       ))}
     </ol>
+    </div>
   </motion.div>
 );
 
 const SkillsAndExperience = () => {
-  const mergedSections = [
-    { title: "Programming Languages", items: skills[0]?.items || [], custom: true },
-    {
-      title: "Frameworks, Libraries & Tools",
-      items: [...(frameworks || []), ...(tools || [])],
-    },
-    {
-      title: "ML / AI & Data Engineering",
-      items: [...(ml_ai || []), ...(dataEngineering || [])],
-    },
-    { title: "Cloud Platforms", items: cloudPlatforms || [] },
-  ];
-
   return (
     <section id="skills" className="mb-12">
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Skills & Experience
       </h1>
       <div className={layout.section}>
-        <motion.div className={`ml-2 mb-6 mr-10 ${layout.sectionInfo}`}>
-          {mergedSections.map((section, index) => (
+        <motion.div className={`min-w-0 mb-6 md:mr-12 ${layout.sectionInfo}`}>
+          {skillCategories.map((section, index) => (
             <SkillCard key={index} {...section} />
           ))}
         </motion.div>
 
-        <motion.div className="flex flex-1 items-center justify-start flex-col">
+        <motion.div className="flex flex-1 min-w-0 items-start justify-start flex-col md:pt-2 md:pl-4 md:pb-6">
           {experiences.map((exp, index) => (
             <ExperienceCard key={index} {...exp} />
           ))}

@@ -38,6 +38,10 @@ import ubms from "./ubms.jpg";
 import edgecenter from "./edgecenter.jpg";
 import utasg from "./utasg.png";
 import sample from "./sample.png";
+import matricesLogo from "./matrices-logo.jpg";
+import qksLogo from "./qks-logo.jpg";
+import deloitteLogo from "./deloitte-logo.jpg";
+import zainiPhoto from "./zaini-photo-clean.png";
 
 export {
   menu,
@@ -80,4 +84,8 @@ export {
   edgecenter,
   utasg,
   sample,
+  matricesLogo,
+  qksLogo,
+  deloitteLogo,
+  zainiPhoto,
 };

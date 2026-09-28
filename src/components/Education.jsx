@@ -25,16 +25,16 @@ const FeatureCard = ({
   index,
 }) => (
   <div
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row p-3 sm:p-6 rounded-[20px] ${
       index === educationList.length - 1 ? "mb-0" : "mb-6"
     } feature-card`}
   >
     <div
-      className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+      className={`w-[48px] h-[48px] sm:w-[64px] sm:h-[64px] shrink-0 rounded-full ${styles.flexCenter} bg-dimBlue`}
     >
       <img src={icon} alt="icon" className="w-[80%] h-[80%] object-contain" />
     </div>
-    <div className="flex-1 flex flex-col ml-4">
+    <div className="flex-1 min-w-0 flex flex-col ml-4">
       <h4 className="font-poppins font-semibold text-white text-[20px] leading-[30px] mb-1 text-gradient">
         {title}
       </h4>

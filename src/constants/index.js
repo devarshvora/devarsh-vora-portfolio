@@ -1,162 +1,8 @@
-import mylogo from "../assets/mylogo.png"; 
-
-import {
-  uta,
-  qks,
-  infolabz,
-  deloitte,
-  cs,
-  gtu,
-  databricks,
-  aws,
-  google,
-  nba_analysis,
-  kmeans_clustering,
-  mbti_prediction,
-  semantic_search,
-  etl_weather ,
-  sales_dashboard,
-  earthquake_pipeline,
-  alejandro,
-  arpit,
-  ubms,
-  edgecenter,
-  utasg,
-  salesforce,
-} from "../assets";
-
-import {
-  SiFlask,
-  SiStreamlit,
-  SiFastapi,
-  SiApacheairflow,
-  SiTensorflow,
-  SiKeras,
-  SiScikitlearn,
-  SiNumpy,
-  SiPandas,
-  SiVisualstudiocode,
-  SiGit,
-  SiPostman,
-  SiJupyter,
-  SiDocker,
-  SiTableau,
-  SiPowerbi,
-  SiApachekafka,
-  SiSnowflake,
-  SiAmazonredshift,
-  SiAmazonaws,
-  SiGooglecloud,
-  SiMicrosoftazure,
-  SiDjango,
-  SiJavascript,
-  SiBootstrap,
-  SiReact,
-  SiTailwindcss,
-  SiPython,
-  SiC,
-  SiRubyonrails,
-  SiJquery,
-  SiMysql,
-  SiSolidity,
-  SiChartdotjs,
-  SiArduino,
-  SiWeb3Dotjs,
-  SiIpfs,
-  SiDotnet,
-  SiTwilio,
-  SiFlutter,
-  SiReplit,
-  SiFigma,
-  SiGooglemaps,
-  SiOpenai,
-  SiNextdotjs,
-  SiR,
-  SiScala,
-  SiAzuredevops,
-  SiPostgresql,
-  SiApachespark,
-} from "react-icons/si";
-
-import { FaChartBar } from "react-icons/fa";
-
-import {
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillMail,
-  AiOutlineTwitter,
-  AiFillHtml5,
-} from "react-icons/ai";
-
-import { DiCss3, DiJava, DiMsqlServer } from "react-icons/di";
-import { FaHardHat, FaRust } from "react-icons/fa";
-import { IoIosNotificationsOutline } from "react-icons/io";
-
-// ✅ Grouped export
-export const icons = {
-  SiFlask,
-  SiStreamlit,
-  SiFastapi,
-  SiApacheairflow,
-  SiTensorflow,
-  SiKeras,
-  SiApachespark,
-  SiScikitlearn,
-  SiNumpy,
-  SiPandas,
-  SiVisualstudiocode,
-  SiGit,
-  SiPostman,
-  SiJupyter,
-  SiDocker,
-  SiTableau,
-  SiPowerbi,
-  SiApachekafka,
-  SiSnowflake,
-  SiAmazonredshift,
-  SiAmazonaws,
-  SiGooglecloud,
-  SiDjango,
-  SiJavascript,
-  SiBootstrap,
-  SiReact,
-  SiTailwindcss,
-  SiC,
-  SiRubyonrails,
-  SiJquery,
-  SiMysql,
-  SiSolidity,
-  SiChartdotjs,
-  SiArduino,
-  SiWeb3Dotjs,
-  SiIpfs,
-  SiDotnet,
-  SiTwilio,
-  SiFlutter,
-  SiReplit,
-  SiFigma,
-  SiGooglemaps,
-  SiOpenai,
-  SiNextdotjs,
-  SiR,
-  SiScala,
-  SiAzuredevops,
-  SiPostgresql,
-  FaChartBar,
-  AiFillGithub,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillMail,
-  AiOutlineTwitter,
-  AiFillHtml5,
-  DiCss3,
-  DiJava,
-  DiMsqlServer,
-  FaHardHat,
-  FaRust,
-  IoIosNotificationsOutline,
-};
+import mylogo from "../assets/mylogo.png";
+import anthropic from "../assets/anthropic.svg";
+import { uta, gtu, google, aws, databricks, salesforce, ubms, edgecenter, utasg } from "../assets";
+import { SiOpenai } from "react-icons/si";
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail, AiOutlineTwitter } from "react-icons/ai";
 
 export const resumeLink =
   "https://drive.google.com/file/d/1lrZPm4B_9xkI0MDDK4aDS3reOXuLivqH/view?usp=sharing";
@@ -223,7 +69,24 @@ export const educationList = [
 ];
 
 
+export const certificationProfile = "https://www.linkedin.com/in/devarshvora/details/certifications/";
+export const recommendationSource = "https://www.linkedin.com/in/devarshvora/details/recommendations/?detailScreenTabIndex=0";
+
 export const certifications = [
+  {
+    Icon: SiOpenai,
+    title: "Agents and Workflows",
+    issuer: "OpenAI",
+    description: "Covered the foundations of building agent workflows, including tool use and structured multi-step task design.",
+    credential: "https://academy.openai.com/public/certificate/593udxlnte",
+  },
+  {
+    icon: anthropic,
+    title: "AI Fluency: Framework & Foundations",
+    issuer: "Anthropic",
+    description: "Developed a practical foundation for evaluating AI capabilities, limitations, and responsible use in everyday work.",
+    credential: "https://verify.skilljar.com/c/4ew4fjjegj5k",
+  },
   {
     icon: google,
     title: "Data Analysis with R Programming",
@@ -262,375 +125,7 @@ export const certifications = [
   },
 ];
 
-// Add your software developments skills here for example - programming languages, frameworks etc.
-export const skills = [
-  {
-    title: "Programming Languages",
-    items: [
-      {
-        id: "pl-2",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "pl-sql",
-        icon: SiMysql,
-        name: "SQL",
-      },
-      {
-        id: "pl-5",
-        icon: FaRust,
-        name: "Rust",
-      },
-      {
-        id: "pl-6",
-        icon: DiJava,
-        name: "Java",
-      },
-      {
-        id: "pl-7",
-        icon: SiC,
-        name: "C",
-      },
-      {
-        id: "pl-r",
-        icon: SiR,
-        name: "R",
-      },
-      {
-        id: "pl-scala",
-        icon: SiScala,
-        name: "Scala",
-      },
-    ],
-  },
-];
-
-export const frameworks = [
-  { id: "fw-1", icon: SiFlask, name: "Flask" },
-  { id: "fw-2", icon: SiStreamlit, name: "Streamlit" },
-  { id: "fw-3", icon: SiFastapi, name: "FastAPI" },
-  { id: "fw-4", icon: SiApacheairflow, name: "Apache Airflow" },
-  { id: "fw-5", icon: SiApachespark, name: "Apache Spark" },
-  { id: "fw-6", icon: SiTensorflow, name: "TensorFlow" },
-  { id: "fw-7", icon: SiKeras, name: "Keras" },
-  { id: "fw-8", icon: SiScikitlearn, name: "Scikit-learn" },
-  { id: "fw-10", icon: SiPandas, name: "Pandas" },
-];
-
-export const tools = [
-  { id: "t-1", icon: SiVisualstudiocode, name: "VS Code" },
-  { id: "t-2", icon: SiGit, name: "Git" },
-  { id: "t-3", icon: AiFillGithub, name: "GitHub" },
-  { id: "t-5", icon: SiJupyter, name: "Jupyter Notebook" },
-  { id: "t-6", icon: SiDocker, name: "Docker" },
-  { id: "t-7", icon: SiTableau, name: "Tableau" },
-  { id: "t-8", icon: SiPowerbi, name: "Power BI" },
-];
-
-export const ml_ai = [
-  { id: "ml-1", icon: SiOpenai, name: "Supervised Learning" },
-  { id: "ml-2", icon: SiOpenai, name: "Deep Learning" },
-  { id: "ml-3", icon: SiOpenai, name: "Natural Language Processing (NLP)" },
-  { id: "ml-4", icon: SiOpenai, name: "Model Deployment" },
-  { id: "ml-5", icon: SiOpenai, name: "Generative AI" },
-];
-
-export const dataEngineering = [
-  { id: "de-1", icon: SiOpenai, name: "ETL Pipelines" },
-  { id: "de-2", icon: SiApachekafka, name: "Apache Kafka" },
-  { id: "de-3", icon: SiSnowflake, name: "Snowflake" },
-  { id: "de-4", icon: SiAmazonredshift, name: "AWS Redshift" },
-  { id: "de-5", icon: SiGooglecloud, name: "BigQuery" },
-  { id: "de-6", icon: SiOpenai, name: "Databricks" },
-];
-
-export const cloudPlatforms = [
-  { id: "cp-1", icon: SiAmazonaws, name: "AWS" },
-  { id: "cp-2", icon: SiGooglecloud, name: "Google Cloud" },
-  { id: "cp-3", icon: SiMicrosoftazure, name: "Azure" },
-];
-
-// Add your current/past professional work experience here
-export const experiences = [
-    {
-    organisation: "Matrices – Remote, USA",
-    logo: cs,
-    positions: [
-      {
-        title: "Applied AI Analyst",
-        duration: "Sept 2025 - Present",
-        content: [
-          {
-            text: "Contributed to AI-driven simulation and analytics workflows for evaluating autonomous agent performance across multi-step tasks. Built and supported scalable ingestion and streaming pipelines using NiFi, Dataflow, Flink, Kafka, and Spark, and collaborated with research and engineering teams to refine evaluation logic and analytical metrics, improving system stability and insight reliability.",
-          },
-        ],
-      },
-    ],
-  },
-    {
-    organisation: "CyberdomeUSA – Indiana, USA",
-    logo: infolabz,
-    positions: [
-      {
-        title: "Data Scientist",
-        duration: "Aug 2025 - Present",
-        content: [
-          {
-            text: "Worked with large-scale security and behavioral data to develop risk scoring and recommendation models while supporting investigative and reporting workflows. Built scalable analytical datasets and pipelines using SQL, dbt, and Spark, and partnered with product and security teams to deliver dashboards and self-serve analytics that improved detection accuracy and investigative turnaround time.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "University of Texas at Arlington – Texas, USA",
-    logo: qks,
-    positions: [
-      {
-        title: "Data & Analytics Assistant",
-        duration: "July 2024 – May 2025",
-        content: [
-          {
-            text: "Supported segmentation and analytics initiatives by analyzing behavioral datasets and contributing to machine learning–driven targeting models to improve engagement. Built and maintained data pipelines using Airflow, Spark, and SQL to improve data availability, and supported reproducible analytics through version-controlled workflows and containerized environments.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "CrystalVoxx Limited – Gujarat, India",
-    logo: deloitte,
-    positions: [
-      {
-        title: "Data Scientist",
-        duration: "July 2021 – Dec 2022",
-        content: [
-          {
-            text: "Worked on large-scale healthcare operational and transactional data to develop machine learning and analytical solutions supporting workflow optimization, performance monitoring, and decision-making. Built recommendation and NLP-based models using Spark and transformer pipelines, and applied statistical analysis, experimentation, and funnel analysis to deliver Tableau dashboards that improved efficiency and operational visibility.",
-          },
-        ],
-      },
-    ],
-  },
-];
-
-// Add information about all the projects to be listed out in your portfolio
-export const projects = [
-  {
-    id: "project-1",
-    title: "Earthquake Data Engineering Pipeline",
-    github:
-      "https://github.com/devarshvora/Earthquake-Azure-Data-Engineering-Pipeline",
-    link: "",
-    image: earthquake_pipeline,
-    content:
-      "Developed an end-to-end data pipeline on Azure to process and analyze earthquake data, utilizing Azure Data Factory, Azure Blob Storage, and Azure SQL Database.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiMicrosoftazure,
-        name: "Azure",
-      },
-      {
-        id: "icon-2",
-        icon: SiAzuredevops,
-        name: "Azure DevOps",
-      },
-      {
-        id: "icon-3",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-5",
-        icon: SiOpenai,
-        name: "Databricks",
-      },
-      {
-        id: "icon-4",
-        icon: SiPostgresql,
-        name: "PostgreSQL",
-      },
-    ],
-  },
-  {
-    id: "project-2",
-    title: "Sales Dashboard",
-    github: "https://github.com/devarshvora/Sales-Dashboard",
-    link: "",
-    image: sales_dashboard,
-    content:
-      "Created an interactive sales dashboard using Power BI to visualize key performance indicators and sales trends across different regions and time periods.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPowerbi,
-        name: "Power BI",
-      },
-      {
-        id: "icon-2",
-        icon: SiPostgresql,
-        name: "PostgreSQL",
-      },
-    ],
-  },
-  {
-    id: "project-3",
-    title: "ETL Weather Data Pipeline",
-    github: "https://github.com/devarshvora/ETLWeather",
-    link: "",
-    image: etl_weather,
-    content:
-      "Implemented an ETL pipeline in Python to extract, transform, and load weather data into a PostgreSQL database for further analysis.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-2",
-        icon: SiPostgresql,
-        name: "PostgreSQL",
-      },
-      {
-        id: "icon-6",
-        icon: SiAmazonaws,
-        name: "AWS",
-      },
-      {
-        id: "icon-3",
-        icon: SiApacheairflow,
-        name: "Apache Airflow",
-      },
-      {
-        id: "icon-4",
-        icon: SiDocker,
-        name: "Docker",
-      },
-      {
-        id: "icon-5",
-        icon: SiApachespark,
-        name: "PySpark",
-      },
-    ],
-  },
-  {
-    id: "project-4",
-    title: "Semantic Search Engine",
-    github: "https://github.com/devarshvora/Semantic-Search",
-    link: "",
-    image: semantic_search,
-    content:
-      "Built a semantic search application leveraging NLP techniques to provide context-aware search results over a corpus of documents.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-2",
-        icon: SiNumpy,
-        name: "NumPy",
-      },
-      {
-        id: "icon-3",
-        icon: SiScikitlearn,
-        name: "scikit-learn",
-      },
-    ],
-  },
-  {
-    id: "project-5",
-    title: "MBTI Personality Prediction",
-    github: "https://github.com/devarshvora/MBTI-Personality-Prediction",
-    link: "",
-    image: mbti_prediction,
-    content:
-      "Developed a machine learning model to predict MBTI personality types based on textual data from social media posts.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-2",
-        icon: SiScikitlearn,
-        name: "scikit-learn",
-      },
-      {
-        id: "icon-3",
-        icon: SiNumpy,
-        name: "NumPy",
-      },
-      {
-        id: "icon-4",
-        icon: SiOpenai,
-        name: "Machine Learning",
-      },
-      {
-        id: "icon-5",
-        icon: SiOpenai,
-        name: "Deep Learning",
-      },  
-    ],
-  },
-  {
-    id: "project-6",
-    title: "K-Means Clustering Implementation",
-    github: "https://github.com/devarshvora/K-means-Clustering-Implementation",
-    link: "",
-    image: kmeans_clustering,
-    content:
-      "Implemented the K-Means clustering algorithm from scratch to cluster synthetic datasets and visualize the results.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-2",
-        icon: SiNumpy,
-        name: "NumPy",
-      },
-      {
-        id: "icon-3",
-        icon: FaChartBar,
-        name: "Matplotlib",
-      },
-    ],
-  },
-  {
-    id: "project-7",
-    title: "NBA Player Performance Analysis",
-    github: "https://github.com/devarshvora/NBA-Player-Position-Classification  ",
-    link: "",
-    image: nba_analysis,
-    content:
-      "Analyzed NBA player statistics to identify performance trends and factors contributing to player efficiency.",
-    stack: [
-      {
-        id: "icon-1",
-        icon: SiPython,
-        name: "Python",
-      },
-      {
-        id: "icon-2",
-        icon: SiPandas,
-        name: "Pandas",
-      },
-      {
-        id: "icon-3",
-        icon: FaChartBar,
-        name: "Matplotlib",
-      },
-    ],
-  },
-];
+export { skillCategories, experiences, projects } from "./portfolio";
 
 // Add links to blogs here (In case if you have any)
 export const blogPosts = [
@@ -728,7 +223,7 @@ export const extraCurricular = [
     content: [
       {
         text: "Explored automated attention detection using behavioral and physiological signals, leveraging eye-tracking sensors and computer vision to analyze focus, distraction, and cognitive engagement.",
-        link: "",
+        link: "https://ieeexplore.ieee.org/abstract/document/9988691",
       },
       {
         text: "Reviewed multiple attention measurement techniques within a ternary data framework, identifying ECG-based analysis as a reliable and scalable approach due to strong signal quality.",
@@ -745,7 +240,7 @@ export const extraCurricular = [
     content: [
       {
         text: "Guided students in exploring STEM subjects through interactive discussions and hands-on activities, incorporating real-world examples and basic data visualization techniques to enhance understanding.",
-        link: "https://ieeexplore.ieee.org/abstract/document/9988691",
+        link: "",
       },
       {
         text: "Fostered a supportive learning environment by encouraging students to analyze data, identify patterns, and present findings visually, nurturing critical thinking skills.",
@@ -806,10 +301,8 @@ export const socialMedia = [
 export const aboutMe = {
   name: "Devarsh Vora",
   githubUsername: "devarshvora",
-  tagLine:
-    "Applied AI/ML & Data Analytics | Data Science • Cloud Engineering | Python • SQL • Data Processing • AWS • Visualization Tools | IEEE Published Author | AWS & Databricks Certified ",
-  intro:
-    "Turning chaos into clarity—either taming unruly datasets, uncovering hidden stories, or engineering the next big breakthrough. Data isn’t just numbers; it’s my playground for ideas.",
+  tagLine: "I build AI and data systems that earn their place in everyday workflows. Open to conversations where thoughtful analysis and reliable engineering can turn a difficult problem into a useful product.",
+  intro: "Turning chaos into clarity, either taming unruly datasets, uncovering hidden stories, or engineering the next big breakthrough. Data isn’t just numbers; it’s my playground for ideas—from intelligent automation to AI systems built for real-world use.",
 };
 
 // The maximum number of PRs to be displayed in the Open Source Contributions section.

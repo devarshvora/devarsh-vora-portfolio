@@ -20,9 +20,10 @@ const App = () => {
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       setIsLoading(false);
     }, 1200);
+    return () => clearTimeout(timeout);
   }, []);
 
   return (
